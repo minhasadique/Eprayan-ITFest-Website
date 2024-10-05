@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Eprayan</title>
+<link rel="icon" type="image/x-icon" href="images/reallogo.png">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        
+    </script>
+	
+	<!-- css files -->
+    <link href="CSS/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="CSS/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="CSS/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+
+	
+<!-- header -->
+<header>
+	<nav class="navbar">
+		<div class="container">
+			<h1 class="logomain">
+				<a href="index.html"><img src="images/NETTEXT.png" width="200px"></a>
+			</h1>
+
+			<!-- menu -->
+			<ul id="menu">
+				<li>
+					<input id="check02" type="checkbox" name="menu" />
+					<label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+					<ul class="submenu">
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#events">Events</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- //menu -->
+
+		</div>
+	</nav>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<section class="banner">
+    <div class="banner-layer">
+        <div class="container">
+            <div class="column banner_info">
+				<div class="card">
+					<img class="btnbg" src="images/newbtn.png" alt="">
+				</div>
+				<br><br>
+				
+				<!-- <div class="typewriter">
+					<div>
+					  <p class="texttypewr"><span class="red-text">#BingeOn</span>Innovation</p>
+					</div>
+				  </div>	   -->
+				  <div class="body">
+					<pre class="pre">          <code>&nbsp;</code>
+					  <code>#BingeOn&nbsp;</code>
+					  <code data-cmd="Innovation" class="cmd"></code>
+					</pre>
+				  </div>
+            </div>
+			
+        </div>
+    </div>
+</section>
+<!-- //banner -->
+
+ <!-- timer -->
+
+<div class="text py-lg-5 py-5 text-center" id="text">
+	<div class="container py-sm-3">
+		<!-- Display the countdown timer in an element -->
+		<div class="container11">
+			<div id="countdown">
+			  <ul>
+				<li class="countdown-item"><span id="days"></span>Days</li>
+				<li class="countdown-item"><span id="hours"></span>Hrs</li>
+				<li class="countdown-item"><span id="minutes"></span>Mins</li>
+				<li class="countdown-item"><span id="seconds"></span>Secs</li>
+			  </ul>
+			</div>
+		  </div>
+<script>
+	(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "10/15/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "The Day Has Arrived!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+
+		</div>
+				<div class="d-flex justify-content-center mt-3">
+<a href="#events">				
+<button class="cta">
+  <span class="span">Register Now</span>
+  <span class="second">
+    <svg
+      width="50px"
+      height="20px"
+      viewBox="0 0 66 43"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        id="arrow"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <path
+          class="one"
+          d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+        <path
+          class="two"
+          d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+        <path
+          class="three"
+          d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+          fill="#FFFFFF"
+        ></path>
+      </g>
+    </svg>
+  </span>
+</button></a>	
+
+
+				</div>
+			</div>
+		</div>
+
+<!-- timer  -->
+	
+<!-- about -->
+
+<section class="about px-2" id="about">
+	<div class="container-fluid">
+		<h3 class="position">About Us</h3>
+		<div class="row justify-content-center align-items-center">
+			<div class="videoab col-lg-5 p-0">
+				<video autoplay muted loop class="video-bg" src="images/tvvideo.mp4"></video>
+			</div>
+			<div class="col-lg-6 about-right">
+				<p>Get ready for a tech fest like no other! E-Prayan is the annual intercollege IT fest at Providence Women's College, where creativity, technology, and excitement collide. Organized by the Computer Science Department, this fest is the ultimate arena for tech enthusiasts to battle out and explore new ideas. This fest is more than just a competition; it's a celebration of creativity, teamwork, and the ever-evolving field of IT. Whether you’re ready to dive into a futuristic AI Battle, showcase your creative flair, test your coding chops, or channel your inner detective , E Prayan has something for everyone.
+					But it’s not just about tech E-Prayan knows how to throw a good party!Enjoy vibrant Cultural Programs that celebrate the spirit of creativity, with music, dance, and performances that add the perfect touch of fun to the fest.
+					So, whether you’re here to compete, create, or just soak up the atmosphere, E Prayan has it all. Join us for an unforgettable experience, where the future is written in code, and innovation knows no bounds!.</p>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+<!-- services-->
+<section class="services pt-5" id="events">
+	<div class="container py-lg-5">
+	  <p class="paragraph"></p>
+
+	  <h3 class="position mb-sm-5 mb-4 text-center">EVENTS</h3>
+
+	  <div class="row justify-content-center"> <!-- Ensure everything is centered -->
+		 
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> 
+	<a href="hackathon.html" alt="Events" target="_blank" class="card-link">
+	  <div class="card21">
+	    <div class="wrapper21">
+		  <img src="images/2evnt.png" class="cover-image" />
+	    </div>
+	    <img src="images/2txt-removebg-preview.png" class="title21" />
+	    <img src="images/temp-removebg-preview.png" class="character" />
+	  </div>
+	</a>
+</div>
+
+  
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+			<a href="battle.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/1evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/1txt-removebg-preview.png" class="title21" />
+			  <img src="images/robohead.png" class="character" />
+			</div>
+		</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+		  <a href="webdesign.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/4evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/4txt-removebg-preview.png" class="title21" />
+			  <img src="images/pixelgrl-removebg-preview.png" class="character" />
+			</div>
+		  </a>
+		</div>
+  
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+			<a href="squidgame.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/7evnt.png" class="cover-image" />
+			  </div>
+			  
+			  <img src="images/7txt-removebg-preview.png" class="title21" />
+			  
+			  <img src="images/dollsquid.png" class="character"/>
+			</div>
+		 </a> 
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+		  <a href="coding.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/3evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/4-removebg-preview.png" class="title21" />
+			  <img src="images/natural-hair-7989687-removebg-preview.png" class="character" />
+			</div>
+		  </a>
+		</div>
+  
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+		  <a href="treasurehunt.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/5evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/6-removebg-preview.png" class="title21" />
+			  <img src="images/pipp.png" class="character" />
+			</div>
+		  </a>
+		</div>
+  
+		
+  
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+		  <a href="quiz.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/6evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/7-removebg-preview.png" class="title21" />
+			  <img src="images/quizg-removebg-preview.png" class="character" />
+			</div>
+		  </a>
+		</div>
+  
+		<div class="col-lg-3 col-md-6 col-12 mb-4 d-flex justify-content-center"> <!-- Adjusted column sizes -->
+		  <a href="videography.html" alt="Events" target="_blank" class="card-link">
+			<div class="card21">
+			  <div class="wrapper21">
+				<img src="images/8evnt.png" class="cover-image" />
+			  </div>
+			  <img src="images/8txt-removebg-preview.png" class="title21" />
+			  <img src="images/dragophoto.png" class="character" />
+			</div>
+		  </a>
+		</div>
+  
+		<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		// Detect if the device is a touch device
+		const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+		if (isTouchDevice) {
+			const cards = document.querySelectorAll('.card-link'); // Select all card links
+
+			cards.forEach(card => {
+				let isTouched = false; // Track if the card has been touched once
+
+				// Use touchstart event for touch devices
+				card.addEventListener('touchstart', function (e) {
+					const currentCard = this; // The card being touched
+
+					if (!isTouched) {
+						// Prevent navigation on the first touch
+						e.preventDefault();
+
+						// Remove hover from all other cards
+						cards.forEach(otherCard => {
+							if (otherCard !== currentCard) {
+								otherCard.querySelector('.card21').classList.remove('hover');
+							}
+						});
+
+						// Add hover class to the touched card
+						currentCard.querySelector('.card21').classList.add('hover');
+						isTouched = true;
+
+						// Reset touch state after 3 seconds if no second touch occurs
+						setTimeout(() => {
+							isTouched = false;
+							currentCard.querySelector('.card21').classList.remove('hover');
+						}, 3000);
+					} else {
+						// Allow navigation on the second touch
+						window.location.href = currentCard.href;
+					}
+				});
+			});
+		}
+	});
+</script>
+
+		</div>
+	  </div>
+	</div>
+</section>
+<!-- //services -->
+
+
+
+
+
+
+<!-- portfolio -->
+<section class="portfolio py-5 px-lg-5" id="portfolio">
+	<div class="container text-center py-lg-5">
+		<h3 class="position mb-sm-5 mb-4 text-center">OUR SPONSORS</h3>
+		<div class="sponsor-row">
+			<div class="sponsoos col-lg-3 col-md-4 col-12 p-0">
+				<div class="box9">
+					<img src="images/myoplogoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Our Gifting Partner</h3>
+						<ul class="icon">
+							<li><a href="https://myop.in/?srsltid=AfmBOopHc-UDfoFr50KfZLVdMhsyG4C9q0EqaeeIx0dyAEZ-a6DDO2IK"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/myopindia?igsh=d201aDRoOTRpZWlq"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/bridgeoon.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Our Sponsor</h3>
+						<ul class="icon">
+							<li><a href="https://bridgeon.in/"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/bridgeon.in?igsh=MW1yN3dmMGlsb2VtMg=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/face360logoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Our Sponsor</h3>
+						<ul class="icon">
+							<li><a href="https://www.face360.in/"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/face_360_?igsh=MTY4NG4zMXFmbmM3YQ=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/tbhlogoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Sponsor</h3>
+						<ul class="icon">
+							<li><a href="https://www.techbyheart.in/"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/tbh.ind?igsh=MTc0NHJnYmo3cHhkbQ=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/usmashlogoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Sponsor</h3>
+						<ul class="icon">
+							<li><a href="https://g.co/kgs/EWa52c5"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/usmashclt?igsh=MTJsMDljdjNsN2NnYw=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/xylemlogoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Sponsor</h3>
+						<ul class="icon">
+							<li><a href="https://xylemlearning.com/"><i class="fa fa-search"></i></a></li>
+							<li><a href="https://www.instagram.com/xylem_learning?igsh=MWJhZndodngxZW43eQ=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 p-0">
+				<div class="box9">
+					<img src="images/mukulamlogoo.png" alt="portfolio" class="img-fluid" />
+					<div class="box-content">
+						<h3 class="title">Sponsor</h3>
+						<ul class="icon">
+							
+							<li><a href="https://www.instagram.com/mukulam23?igsh=MXVvdzNhaGNqOHliMg=="><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+</section>
+<!-- //portfolio -->
+
+
+<!-- quote -->
+<section class="quote py-lg-5">
+	<div class="container py-5">
+		<div class="row pl-2">
+			<div class="col-lg-8">
+				<h4>" We would like to extend our deepest gratitude to our incredible sponsors, whose generous contributions have made this year's E Prayan a reality. Your partnership is invaluable, and we are truly grateful for your belief in our vision and for helping us bring E Prayan to life!"</h4>
+				<h5>-Eprayan</h5>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //quote -->
+
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+	<div class="container py-5">
+		<h3 class="position mb-sm-5 mb-4 text-center">CONTACT US</h3>
+		<div class="contact-form">
+			<div class="row justify-content-center">
+				<div class="card22 col-lg-10 p-0">  <!-- Ensure clean layout -->
+					<div class="row g-0 d-flex flex-md-row flex-column">  <!-- Flex control for row/column layout -->
+						
+						<!-- Card body section (Coordinators) -->
+						<div class="col-md-6 col-12 order-md-1 order-1">  <!-- Keep order for smaller screens -->
+							<div class="card-body p-3 ml-lg-3">
+								<img class="coords" src="images/coords3.png" width="720px" alt="Coordinators Image">
+							</div>
+						</div>
+
+						<!-- Map section -->
+						<div class="mapdiv col-md-6 col-12 order-md-2 order-2"> <!-- Use order to control layout on smaller screens -->
+							<iframe class="mapclass" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.5064915962535!2d75.80330257504959!3d11.297642688884599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65e9e05630773%3A0x4754edde546a2b!2sProvidence%20Women&#39;s%20College%20(Autonomous)!5e0!3m2!1sen!2sin!4v1726872782828!5m2!1sen!2sin"></iframe>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Contact -->		
+		
+<!-- footer -->
+<footer class="py-lg-5 py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<h3 class="wthree-logo mt-3">
+					<a href="index.html"><img src="images/NETTEXT.png" width="200px"></a>
+				</h3>
+			</div>
+			<div class="col-lg-7 my-lg-0 my-4 text-end">
+				<p><span class="fa mr-2 fa-map-marker"></span>Providence Womens College</p> 
+				<p class="mt-2"><span class="fa mr-2 fa-envelope"></span><a href="mailto:eprayaan@gmail.com?subject=Subject%20Here&body=Message%20goes%20here">eprayaan@gmail.com</a> <a href="https://www.instagram.com/eprayan.fest?igsh=M281cHF6NzRsZm9s"> <span class="fa ml-3 mr-2 fa-instagram"></span>eprayan.fest</p></a>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright py-3 text-center">
+	<div class="container">
+		<a href="https://www.linkedin.com/in/minha-sadique-187b61293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><p class="my-2"> All rights reserved | Built by Minha Sadique
+		
+		</p></a>
+	</div>
+</div>
+<!-- copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+
+
+<script src="script.js"></script>
+</body>
+</html>
