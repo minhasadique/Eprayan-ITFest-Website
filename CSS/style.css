@@ -278,7 +278,7 @@ a.scroll.bnr-btn i{
   .card::after {
 	content: '';
 	position: absolute;
-	background:url(../images/thebutton.jpeg) no-repeat center;;
+	background:url(../images/thebutton.jpg) no-repeat center;;
 	background-size: cover;
 	width: 367px;
 	inset: 5px;
