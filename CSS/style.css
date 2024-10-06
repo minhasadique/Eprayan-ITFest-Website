@@ -242,7 +242,7 @@ a.scroll.bnr-btn i{
 	width: 380px;
 	height: 380px;
 	margin-top: 170px;
-	background:url(../images/thebutton.jpg) no-repeat center;
+	background:url(../images/) no-repeat center;
 	position: relative;
 	display: flex;
 	place-content: center;
