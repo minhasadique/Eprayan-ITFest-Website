@@ -1115,7 +1115,7 @@ p.paragraph:after {
 /*-- quote --*/
 
 .quote1{
-	background: url(../images/hackbg.jpeg) 0px 0px;
+	background: url(../images/hackbg.jpg) 0px 0px;
   background-size: cover;
   position: relative;
 }
