@@ -1115,7 +1115,7 @@ p.paragraph:after {
 /*-- quote --*/
 
 .quote1{
-	background: url(../images/hackbg.jpeg) 0px 0px;
+	background: url(images/hackbg.jpeg) 0px 0px;
   background-size: cover;
   position: relative;
 }
@@ -1272,7 +1272,7 @@ opacity: 0.9;
 
 
 .quote2{
-	background: url(../images/battlebg.jpeg) 0px 0px;
+	background: url(images/battlebg.jpeg) 0px 0px;
   background-size: cover;
   position: relative;
 }
@@ -1392,7 +1392,7 @@ opacity: 0.9;
 }
 
 .quote7{
-	background: url(../images/videographbg.jpeg) 0px 0px;
+	background: url(images/videographbg.jpeg) 0px 0px;
   background-size: cover;
   position: relative;
 }
