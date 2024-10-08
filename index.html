@@ -32,15 +32,6 @@
 </head>
 <body>
 
-<!-- Video Loader -->
-    <div id="videoLoader">
-        <video autoplay muted id="loaderVideo">
-            <source src="images/loaderintro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-<div id="websiteContent">	
 
 	
 <!-- header -->
@@ -575,22 +566,7 @@
 <!-- move top -->
 
 
-</div>
 
-<script>
-        // Hide the loader and show the content when the page is fully loaded
-        window.addEventListener('load', function () {
-            const videoLoader = document.getElementById('videoLoader');
-            const websiteContent = document.getElementById('websiteContent');
-
-            // Once the video ends, hide the loader and show the website content
-            const video = document.getElementById('loaderVideo');
-            video.addEventListener('ended', function() {
-                videoLoader.style.display = 'none';
-                websiteContent.style.display = 'block';
-            });
-        });
-    </script>	
 
 
 <script src="script.js"></script>
